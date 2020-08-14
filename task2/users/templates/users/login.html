@@ -1,0 +1,16 @@
+<html lang = "en">
+<h1> Log in  </h1>
+{% if message %}
+ {{ message }}
+{% endif %}
+<body>
+<form  method = "POST">
+  {% csrf_token %}
+  <small>username :- </small> 
+  <input type = "text" name = "uname"> <p> 
+  <small>password :- </small> 
+  <input type = "Password" name = "pd"> <p> 
+  <button type = "submit"> log in </button>
+</form>
+</body>
+</html>

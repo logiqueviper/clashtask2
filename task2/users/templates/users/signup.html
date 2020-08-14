@@ -1,0 +1,26 @@
+<html lang = "en">
+<h1> sign up </h1>
+{% if message %}
+ {{ message }}
+{% endif %}
+<body>
+<form  method = "POST">
+  {% csrf_token %}
+  <small>username :- </small> 
+  <input type = "text" name = "uname"> <p> 
+  <small>First name :- </small> 
+  <input type = "text" name = "fname"> <p> 
+  <small>Last name :- </small> 
+  <input type = "text" name = "lname"> <p> 
+  <small>email :- </small> 
+  <input type = "text" name = "email"> <p> 
+  <small>contact number :- </small> 
+  <input type = "number" name = "phno"> <p> 
+  <small>Password :- </small> 
+  <input type = "Password" name = "pd"> <p> 
+  <small>Confirm password :- </small> 
+  <input type = "Password" name = "cpd"> <p> 
+  <button type = "submit"> Sign up  </button>
+</form>
+</body>
+</html>
